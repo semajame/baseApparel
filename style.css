@@ -1,0 +1,167 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+font-family: 'Josefin Sans', sans-serif;
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600 */
+
+
+
+:root{
+    --cr: hsl(0, 36%, 70%);
+    --csr: hsl(0, 93%, 68%);
+    --cdgr: hsl(0, 6%, 24%);
+    --gradient: #FFF7F8;
+    --ff: 'Josefin Sans', sans-serif;
+    --fs: 1rem;
+    --fs1: 1.5rem;
+    --fs2: 2rem;
+    --fs3: 3.5rem;
+    --fs4: 4rem;
+    --fs5: 5rem;
+}
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.container{
+    background: url(/img/bg-pattern-desktop.svg) no-repeat;
+    background-position-y: -100px;
+    font-family: var(--ff);
+    display: flex;
+    max-width: 100%;
+}
+
+.left-content{
+    padding: 3rem 0 0 7rem;
+}
+
+.logo{
+    padding-bottom: 6rem;
+    width: 120px;
+}
+
+.left-content h1{
+    max-width: 400px;
+    line-height: 4.3rem;
+    text-transform: uppercase;
+    font-size: var(--fs3);
+    letter-spacing: 0.8rem;
+    color: var(--cdgr);
+}
+
+.left-content span{
+    font-weight: 300;
+    color: var(--cr);
+}
+
+.left-content p{
+    color: var(--cr);
+    margin: 2rem 0;
+    max-width: 600px;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+}
+
+.input-container input{
+    border-radius: 30px;
+    border: none;
+    width: 350px;
+    padding: 0.6rem 0 0.6rem 1.6rem;
+    outline: none;
+}
+
+.input-container input::placeholder{
+    color: gray;
+}
+
+.input-container #submit{
+    border: none;
+    margin-left: -3rem;
+    cursor: pointer;
+}
+
+#submit{
+    width: 80px;
+    background: linear-gradient(90deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+    background-image: url(/img/icon-arrow.svg) no-repeat;
+}
+
+#error{
+    position: absolute;
+    left: 23.5rem;
+    display: none;
+}
+
+#valid-email{
+    color: var(--csr);
+    font-weight: 600;
+    font-size: 0.8rem;
+    top: 35.5rem;
+    left: 8rem;
+    position: absolute;
+    display: none;
+}
+
+.arrow{
+    position: relative;
+    top: 0;
+    width: 10px;
+    left: -2.8rem;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: linear-gradient(90deg, rgba(248,191,191,1) 50%, rgba(238,140,140,1) 100%);
+    transition: 300ms ease;
+    box-shadow: 0px 3px 14px 0px rgba(238,140,140,0.96);
+}
+
+.mobile-img{
+    display: none;
+}
+
+.right-content{
+    background: url(/img/hero-desktop.jpg) no-repeat right;
+    width: 100%;
+    background-size: 65%;
+    height: 100vh;
+}

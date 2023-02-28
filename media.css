@@ -1,0 +1,73 @@
+@media screen and (max-width: 800px) {
+
+
+.container{
+    background: url(/img/bg-pattern-desktop.svg) no-repeat;
+    background-position-y: -100px;
+    font-family: var(--ff);
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+}
+
+.left-content{
+    padding: 0 0 5rem 0;
+}
+
+.logo{
+    width: 150px;
+    padding: 3rem 0 3rem 3rem;
+}
+
+.left-content h1{
+    text-align: center;
+    max-width: none;
+    font-size: var(--fs3);
+}
+
+.left-content p{
+    max-width: none;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.arrow{
+    cursor: pointer;
+}
+
+.right-content{
+    display: none;
+    left: none;
+}
+
+#error{
+    position: absolute;
+    left: 15rem;
+    display: none;
+}
+
+#valid-email{
+    color: var(--csr);
+    font-weight: 600;
+    font-size: 0.8rem;
+    top: 55rem;
+    left: 3rem;
+    position: absolute;
+    display: none;
+}
+
+.mobile-img{
+    display: block;
+    width: 100%;
+    padding: 0 0 2rem 0;
+}
+
+}
